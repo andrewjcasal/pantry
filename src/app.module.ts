@@ -16,6 +16,7 @@ import { ItemsModule } from './items/items.module';
             database: process.env.POSTGRES_DATABASE || 'postgres',
             autoLoadEntities: true,
             synchronize: true,
+            ssl: true,
         }),
     ],
     controllers: [AppController],
